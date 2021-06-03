@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+ <div class="container w-50 p-5 mt-3 shadow-lg">
+
+    <h2>HTML Forms</h2><br>
+
+    <label>product name:</label>
+    <input type="text" id="pname" class="form-control mb-3">
+    <label>product category:</label>
+    <input type="text" id="pcaregory" class="form-control mb-3">
+    <label>product price:</label>
+    <input type="text" id="pprice" class="form-control mb-3">
+    <label>product description:</label>
+    <textarea id="pdescription" class="form-control mb-3"></textarea>
+
+    <button onclick="addProduct();" id="addbtn" class="btn btn-info">add product</button>
+  </div>
+
+  <input type="text" id="searchInp" onkeyup="search();" placeholder="search...." class="form-control w-25 mt-5 mx-auto">
+
+  <div class="container mt-4">
+  <table class="table table-striped text-center">
+      <thead>
+          <tr>
+              <th>index</th>
+              <th>name</th>
+              <th>category</th>
+              <th>price</th>
+              <th>description</th>
+              <th>update</th>
+              <th>delete</th>
+             
+          </tr>
+      </thead>
+
+      <tbody id="tbody">
+                 
+      </tbody>
+  </table>
+</div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
